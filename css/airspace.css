@@ -49,7 +49,7 @@ a:active {
   text-decoration: none !important;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .section-title h2 {
   text-transform: uppercase;
@@ -101,7 +101,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 100px 0 120px 0;
   position: relative;
 }
 #slider:before {
@@ -124,15 +124,15 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 100;
   font-size: 45px;
   line-height: 60px;
-  letter-spacing: 10px;
-  padding-bottom: 45px;
+  /*letter-spacing: 10px;*/
+  /*padding-bottom: 45px;*/
 }
 #slider .block p {
   font-size: 23px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  letter-spacing: 3px;
+  /*letter-spacing: 3px;*/
 }
 /*--
 	wrapper Start
@@ -345,11 +345,17 @@ font header .navbar-default .navbar-nav li a:hover {
 	features Start
 --*/
 #clients-logo-section {
-  padding-top: 30px;
+ /* padding-top: 30px;*/
   padding-bottom: 75px;
 }
 #clients-logo-section .clients-logo-img {
-  padding: 0px 50px;
+  /*padding: 0px 50px;*/
+  
+}
+
+#clients-logo-section .clients-logo-img img{
+  height:50px;
+
 }
 /*---------------------------------------------
 					Work Start
@@ -386,16 +392,16 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block h1 {
   font-weight: 100;
   font-size: 45px;
-  letter-spacing: 6px;
-  padding-bottom: 15px;
+  /*letter-spacing: 6px;*/
+ /*padding-bottom: 15px;*/
   margin-top: 0;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 #global-header .block p {
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+  /*letter-spacing: 1px;*/
+  /*word-spacing: 3px;*/
 }
 /*--
 	portfolio-work Start
@@ -491,7 +497,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .portfolio-contant ul li a h2 {
   font-size: 22px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
 }
 #portfolio-work .block .portfolio-contant ul li a p {
   font-size: 15px;
@@ -643,8 +649,8 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+  /*letter-spacing: 1px;
+  word-spacing: 3px;*/
 }
 /*--
 	contact-form Start
