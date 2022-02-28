@@ -2,11 +2,11 @@
 layout: post
 title: Kick-off meeting @I3S!
 subtitle: Official scientific kick-off of MultiTrans at I3S Lab in Nice!
-date: 2022-02-01 09:00:00
+date: 2022-03-01 09:00:00
 author: Maxime Gueriau
 ---
 Today is the official scientific launch event of MultiTrans project! 
-All partners are meeting are the I3S Lab located in Sophia Antipolis (next to Nice, France).
+All partners are meeting are the I3S Lab located in Sophia Antipolis (near Nice, France).
 
 The program of this very special day is the following:
 1. Morning:
