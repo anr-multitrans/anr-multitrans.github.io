@@ -40,7 +40,8 @@ p {
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  /*list-style: none;*/
+  padding-left:1em;
 }
 a,
 a:active,
@@ -298,6 +299,11 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 30px;
   font-weight: bold;
 }
+
+.bolded{
+font-weight: bold;
+}
+
 #testimonial .counter-box li span {
   color: #555;
 }
