@@ -37,6 +37,8 @@ permalink: /jobs/
   <h4>Title: {{ post.subtitle }}</h4>
   
   <p class="post-date"><span class="post-deadline">Application deadline:</span> {{ post.deadline | date_to_long_string }}</p>
+  <p class="post-date">Expected start: {{ post.starting }}</p>
+  <p class="post-date">Research group: {{ post.group }}</p>
   <p>
   Full details (including application instructions): <a href="{{ post.pdf | prepend: site.baseurl}}" alt="link to PDF"><img width="80pt" src="/img/pdf.png" style="padding: 10px;" ></img></a> 
   </p>

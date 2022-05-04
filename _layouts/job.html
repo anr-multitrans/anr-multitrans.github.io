@@ -13,6 +13,8 @@ layout: page
             <h3>{{ page.subtitle }}</h3>
             <div class="post-info-wrapper">
               <p class="post-date"><span class="post-deadline">Application deadline:</span> {{ page.deadline | date_to_long_string }}</p>
+              <p class="post-date">Expected start: {{ page.starting }}</p>
+              <p class="post-date">Research group: {{ ppageost.group }}</p>
             </div>
             <p class="center-text">
             	<object align="center" data="{{ page.pdf }}" width="100%" height="1000" type='application/pdf'></object>
