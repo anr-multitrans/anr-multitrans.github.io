@@ -9,7 +9,7 @@ Today is the official scientific launch event of MultiTrans project!
 All partners are meeting are the I3S Lab located in Sophia Antipolis (near Nice, France).
 
 
-![Aerial view of the campus where I3S is located](/img/posts/I3S_site.png){: width="1000" }
+![Aerial view of the campus where I3S is located](/img/posts/ANR MultiTrans kickoff 01.03.2022.png){:style="display:block; margin-left:auto; margin-right:auto" : width="840" }
 
 
 The program of this very special day is the following:
