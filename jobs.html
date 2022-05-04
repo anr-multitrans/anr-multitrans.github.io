@@ -21,9 +21,28 @@ permalink: /jobs/
 		      <div class="section-title">
 			<h2>Open positions</h2>
 	              </div>
-			<p>Coming soon.</p>
+			<!--<p>Coming soon.</p>-->
+			
+			
 		      
 		    </div>
 		</div>
 	</div>
+	
+	
+  <div class="container">
+{% for post in site.ads %}
+<div class="post-area">
+  <h2><a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a></h2>
+  <h4>Title: {{ post.subtitle }}</h4>
+  
+  <p class="post-date"><span class="post-deadline">Application deadline:</span> {{ post.deadline | date_to_long_string }}</p>
+  <p>
+  Full details (including application instructions): <a href="{{ post.pdf | prepend: site.baseurl}}" alt="link to PDF"><img width="80pt" src="/img/pdf.png" style="padding: 10px;" ></img></a> 
+  </p>
+  
+</div>
+{% endfor %}
+
+</div>
 </section>
