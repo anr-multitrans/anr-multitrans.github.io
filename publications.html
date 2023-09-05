@@ -70,7 +70,10 @@ permalink: /publications/
             <b>{{post.conf}}:</b> 
           {{ post.title }}; <i>{{post.authors}}</i>
         </h4>
-        <p >{{ post.date | date_to_long_string }}</p>
+        <p> 
+        {{ post.date | date_to_long_string }},
+        <a href="{{post.confurl}}" > {{  post.confurl }} </a>
+        </p>
         {{ post.content }}
         <p>
         <a href="{{ post.pdf | prepend: site.baseurl }}" alt="link to PDF"><img width="60pt" src="/img/pdf.png" ></a>
@@ -98,7 +101,9 @@ permalink: /publications/
       <b>{{post.conf}}:</b> 
       {{ post.title }}; <i>{{post.authors}}</i>
     </h4>
-    <p >{{ post.date | date_to_long_string }}</p>
+    <p >{{ post.date | date_to_long_string }},
+    <a href="{{post.confurl}}" > {{  post.confurl }} </a>
+    </p>
     {{ post.content }}
     <a href="{{ post.pdf | prepend: site.baseurl }}" alt="link to PDF"><img width="100pt" src="{{ post.png}}" ></a>
   </div>

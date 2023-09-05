@@ -1,5 +1,6 @@
 ---
 conf: ORASIS
+confurl: https://orasis2023.sciencesconf.org/
 title: Enhancing Object Detection for Autonomous Vehicles Using Semantic Segmentation Labels
 authors: C. Bunel, M. Gueriau, S. Ainouz, G. Gasso
 date: 2023-05-22

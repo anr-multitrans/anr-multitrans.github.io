@@ -1,5 +1,6 @@
 ---
 conf: ICRA 
+confurl: https://www.icra2023.org/
 title: Using scores from the model architecture for unknow object
 detection in autonomous driving: Preliminary results
 authors: C. Bunel, M. Gueriau, S. Ainouz, G. Gasso
