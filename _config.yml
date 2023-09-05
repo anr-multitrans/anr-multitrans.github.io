@@ -15,6 +15,10 @@ keep_files:
 collections:
   ads:
     output: true
+  poster:
+    output: true
+  workshop:
+    output: true
   
 # Site settings
 title: ANR MultiTrans

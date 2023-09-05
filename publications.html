@@ -58,9 +58,51 @@ permalink: /publications/
 		      <div class="section-title">
 			<h2>Workshops</h2>
 	              </div>
-			<p>Coming soon!</p>
-		      
 		    </div>
 		</div>
 	</div>
+
+
+    <div class="container">
+      {% for post in site.workshop%}
+      <div class="post">
+        <h4>
+            <b>{{post.conf}}:</b> 
+          {{ post.title }}; <i>{{post.authors}}</i>
+        </h4>
+        <p >{{ post.date | date_to_long_string }}</p>
+        {{ post.content }}
+        <p>
+        <a href="{{ post.pdf | prepend: site.baseurl }}" alt="link to PDF"><img width="60pt" src="/img/pdf.png" ></a>
+        <a href="{{ post.png | prepend: site.baseurl }}" alt="link to PDF"><img width="60pt" src="{{ post.png}}" ></a>
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+
+
+</section>
+<section id="publication-poster">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Posters</h2>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  {% for post in site.poster %}
+  <div class="post">
+    <h4>
+      <b>{{post.conf}}:</b> 
+      {{ post.title }}; <i>{{post.authors}}</i>
+    </h4>
+    <p >{{ post.date | date_to_long_string }}</p>
+    {{ post.content }}
+    <a href="{{ post.pdf | prepend: site.baseurl }}" alt="link to PDF"><img width="100pt" src="{{ post.png}}" ></a>
+  </div>
+  {% endfor %}
+</div>
+
 </section>
