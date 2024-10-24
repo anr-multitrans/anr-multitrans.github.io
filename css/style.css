@@ -36,3 +36,18 @@
 .post-deadline {
 	text-decoration: underline;
 }
+
+.pub-area {
+  padding: 40px;
+  width: 100%;
+  min-height: 150px;
+  background-color: white;
+}
+
+.pub-area li {
+  margin: 0 0 3px 0;
+}
+
+.pub-title {
+ font-weight: bold;
+}
