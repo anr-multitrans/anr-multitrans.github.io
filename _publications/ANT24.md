@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: CornerSim; A Virtualization Framework to Generate Realistic Corner-Case Scenarios for Autonomous Driving Perception Testing
+title: CornerSim&#58; A Virtualization Framework to Generate Realistic Corner-Case Scenarios for Autonomous Driving Perception Testing
 authors: Alaa Daoud, Corentin Bunel, Maxime Guériau
 venue: The 15th International Conference on Ambient Systems, Networks and Technologies (ANT)
 year: 2024
