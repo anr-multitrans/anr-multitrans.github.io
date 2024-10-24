@@ -12,7 +12,7 @@ permalink: /publications/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Publications, workshops and presentations</h1>
+          <h1>Publications and presentations</h1>
           <!--<p></p>-->
         </div>
       </div>
@@ -48,9 +48,6 @@ permalink: /publications/
 			   {% endif %}
 			   {% if pub.poster %}
 			     <a href="/{{ pub.slug }}_poster.pdf"><i class="far fa-file-pdf"></i> Poster</a>&nbsp;&nbsp;
-			   {% endif %}
-			   {% if pub.toolbox %}
-			     <a href="{{ pub.toolbox }}"><i class="fab fa-github"></i> Toolbox</a>&nbsp;&nbsp;
 			   {% endif %}
 			 </div>
 			 </li>
@@ -134,36 +131,4 @@ permalink: /publications/
 		</div>
 	</div>
 </section>
-<section id="publications-workshops">
-	<div class="container">
-		<div class="row">
-		      <div class="section-title">
-			<h2>Workshops</h2>
-	              </div>
-			<!--<p>Coming soon!</p>-->
-		      <ol>
-			{% for pub in publications %}
-			 {% if pub.type == 'workshop' %}
-			 <li>
-			 <div class="pubitem">
-			   <div class="pubauthors">
-			     {{ pub.authors }}
-			   </div>
-			   <div class="pub-title">
-			     {{ pub.title }}
-			   </div>
-			   <div class="pubpublication">
-			     {{ pub.publication }}, {{pub.year}}.
-			   </div>
-			 </div>
-			 <div class="publinks">
-			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
-			 </div>
-			 </li>
-			 {% endif %}
-			{% endfor %}
-			</ol>
-		    </div>
-		</div>
-	</div>
-</section>
+
