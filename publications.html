@@ -3,6 +3,9 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
+
+{% assign publications = site.publications | sort: "year" | reverse %}
+
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
@@ -22,8 +25,38 @@ permalink: /publications/
 		      <div class="section-title">
 			<h2>Journal articles</h2>
 		       </div>
-			<p>Coming soon!</p>
-		      
+			<!-- <p>Coming soon!</p> -->
+		      <ol>
+			{% for pub in publications %}
+			 {% if pub.type == 'journal' %}
+			 <li>
+			 <div class="pubitem">
+			   <div class="pubauthors">
+			     {{ pub.authors }}
+			   </div>
+			   <div class="pub-title">
+			     {{ pub.title }}
+			   </div>
+			   <div class="pubpublication">
+			     {{ pub.publication }}, {{pub.pubdate}}, {{pub.year}}.
+			   </div>
+			 </div>
+			 <div class="publinks">
+			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+			   {% if pub.slides %}
+			     <a href="/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+			   {% endif %}
+			   {% if pub.poster %}
+			     <a href="/{{ pub.slug }}_poster.pdf"><i class="far fa-file-pdf"></i> Poster</a>&nbsp;&nbsp;
+			   {% endif %}
+			   {% if pub.toolbox %}
+			     <a href="{{ pub.toolbox }}"><i class="fab fa-github"></i> Toolbox</a>&nbsp;&nbsp;
+			   {% endif %}
+			 </div>
+			 </li>
+			 {% endif %}
+			{% endfor %}
+			</ol>
 		    </div>
 		</div>
 	</div>
@@ -34,8 +67,35 @@ permalink: /publications/
 		      <div class="section-title">
 			<h2>Conference proceedings</h2>
 		      </div>
-			<p>Coming soon!</p>
-		      
+			<!--<p>Coming soon!</p>-->
+		        <ol>
+			{% for pub in publications %}
+			 {% if pub.type == 'conference' %}
+			 <li>
+			 <div class="pubitem">
+			   <div class="pubauthors">
+			     {{ pub.authors }}
+			   </div>
+			   <div class="pub-title">
+			     {{ pub.title }}
+			   </div>
+			   <div class="pubpublication">
+			     {{ pub.publication }}, {{pub.pubdate}}, {{pub.year}}.
+			   </div>
+			 </div>
+			 <div class="publinks">
+			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+			   {% if pub.slides %}
+			     <a href="/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+			   {% endif %}
+			   {% if pub.poster %}
+			     <a href="/{{ pub.slug }}_poster.pdf"><i class="far fa-file-pdf"></i> Poster</a>&nbsp;&nbsp;
+			   {% endif %}
+			 </div>
+			 </li>
+			 {% endif %}
+			{% endfor %}
+			</ol>
 		    </div>
 		</div>
 	</div>
@@ -46,8 +106,30 @@ permalink: /publications/
 		      <div class="section-title">
 			<h2>Presentations</h2>
 		      </div>
-			<p>Coming soon!</p>
-		      
+			<!--<p>Coming soon!</p>-->
+		      <ol>
+			{% for pub in publications %}
+			 {% if pub.type == 'presentation' %}
+			 <li>
+			 <div class="pubitem">
+			   <div class="pubauthors">
+			     {{ pub.authors }}
+			   </div>
+			   <div class="pub-title">
+			     {{ pub.title }}
+			   </div>
+			   <div class="pubpublication">
+			     {{ pub.publication }}, {{pub.pubdate}}, {{pub.location}}, {{pub.year}}.
+			   </div>
+			 </div>
+			 <div class="publinks">
+			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+			 </div>
+			 </li>
+			 {% endif %}
+			{% endfor %}
+			</ol>
+
 		    </div>
 		</div>
 	</div>
@@ -58,8 +140,29 @@ permalink: /publications/
 		      <div class="section-title">
 			<h2>Workshops</h2>
 	              </div>
-			<p>Coming soon!</p>
-		      
+			<!--<p>Coming soon!</p>-->
+		      <ol>
+			{% for pub in publications %}
+			 {% if pub.type == 'workshop' %}
+			 <li>
+			 <div class="pubitem">
+			   <div class="pubauthors">
+			     {{ pub.authors }}
+			   </div>
+			   <div class="pub-title">
+			     {{ pub.title }}
+			   </div>
+			   <div class="pubpublication">
+			     {{ pub.publication }}, {{pub.year}}.
+			   </div>
+			 </div>
+			 <div class="publinks">
+			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+			 </div>
+			 </li>
+			 {% endif %}
+			{% endfor %}
+			</ol>
 		    </div>
 		</div>
 	</div>
