@@ -1,0 +1,9 @@
+---
+layout: post
+title: Presenting our work on Open-Set Object Detection @IV2024!
+subtitle: New paper using CornerSim to evaluate object detection in open-set settings
+date: 2024-06-03 18:42:12
+author: Corentin Bunel
+---
+Corentin Bunel (INSA Rouen Normandie) is presenting our work entitled "Addressing Open-set Object Detection for Autonomous Driving perception: A focus on road objects" in Jeju, Korea during the 35th IEEE Intelligent Vehicles Symposium.
+![ANT2024 presentation](/img/posts/IV24_MultiTrans.jpg){:style="display:block; margin-left:auto; margin-right:0" : width="300" }  
