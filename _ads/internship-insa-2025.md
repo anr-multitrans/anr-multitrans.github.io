@@ -5,7 +5,7 @@ subtitle: Techniques de pseudo-labelling pour la détection d’objets inconnus 
 deadline: 2024-11-31
 starting: Jan.-Fev 2025
 group: INSA Rouen Normandie - LITIS
-pdf: /pdfs/Stage_ingenieur_ANR MultiTrans_LITIS-INSAR_Printemps2025_fr.pdf
+pdf: /pdfs/Stage_ingenieur_ANR-MultiTrans_LITIS-INSAR_Printemps2025_fr.pdf
 author: Maxime Gueriau
 ---  
 
