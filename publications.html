@@ -45,6 +45,12 @@ permalink: /publications/
 				 {% if pub.code_url %}
 				 <a href="{{ pub.code_url}}"><i class="far fa-file-pdf"></i> Code</a>&nbsp;&nbsp;
 				 {% endif %}
+				 {% if pub.paper_url %}
+				 <a href="{{ pub.paper_url}}"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+				 {% endif %}
+				 {% if pub.video %}
+				 <a href="{{ pub.video}}"><i class="far fa-file-pdf"></i> Video</a>&nbsp;&nbsp;
+				 {% endif %}
 			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
 			   {% if pub.slides %}
 			     <a href="/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
@@ -84,6 +90,15 @@ permalink: /publications/
 			   </div>
 			 </div>
 			 <div class="publinks">
+			 {% if pub.code_url %}
+				 <a href="{{ pub.code_url}}"><i class="far fa-file-pdf"></i> Code</a>&nbsp;&nbsp;
+				 {% endif %}
+				 {% if pub.paper_url %}
+				 <a href="{{ pub.paper_url}}"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+				 {% endif %}
+				 {% if pub.video %}
+				 <a href="{{ pub.video}}"><i class="far fa-file-pdf"></i> Video</a>&nbsp;&nbsp;
+				 {% endif %}
 			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
 			   {% if pub.slides %}
 			     <a href="/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
