@@ -42,6 +42,9 @@ permalink: /publications/
 			   </div>
 			 </div>
 			 <div class="publinks">
+				 {% if pub.code_url %}
+				 <a href="{{ pub.code_url}}"><i class="far fa-file-pdf"></i> Link</a>&nbsp;&nbsp;
+				 {% endif %}
 			   <a href="/{{ pub.slug}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
 			   {% if pub.slides %}
 			     <a href="/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
