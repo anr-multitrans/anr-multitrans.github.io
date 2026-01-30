@@ -38,7 +38,7 @@ permalink: /publications/
 			     {{ pub.title }}
 			   </div>
 			   <div class="pubpublication">
-			     {{ pub.publication }}, {{pub.pubdate}}, {{pub.year}}.
+			     {{ pub.publication }}, {% if pub.code_url %}{{pub.pubdate}},{% endif %} {{pub.year}}.
 			   </div>
 			 </div>
 			 <div class="publinks">
@@ -86,7 +86,7 @@ permalink: /publications/
 			     {{ pub.title }}
 			   </div>
 			   <div class="pubpublication">
-			     {{ pub.venue }}, {{pub.pubdate}}, {{pub.year}}.
+			     {{ pub.venue }}, {% if pub.code_url %}{{pub.pubdate}},{% endif %} {{pub.year}}.
 			   </div>
 			 </div>
 			 <div class="publinks">
